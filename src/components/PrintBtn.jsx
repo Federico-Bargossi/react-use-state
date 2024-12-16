@@ -1,11 +1,11 @@
-function PrintBtn({title , id}){
+function PrintBtn({title , id , onClick}){
 
         if(title === "CSS"){
-            return (<button className="btn-small btn" key={id}>{title}</button>)
+            return (<button className="btn-small btn" onClick={onClick} key={id}>{title}</button>)
         }if(title === "JavaScript"){
-            return (<button className="btn" key={id}>{title}</button>)
+            return (<button className="btn" onClick={onClick} key={id}>{title}</button>)
         } else {
-            return (<button className="btn btn-md" key={id}>{title}</button>)
+            return (<button className="btn btn-md" onClick={onClick} key={id}>{title}</button>)
         }
 }
 
